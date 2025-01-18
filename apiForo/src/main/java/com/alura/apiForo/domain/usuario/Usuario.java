@@ -27,21 +27,6 @@ public class Usuario implements UserDetails {
     private String clave;
     private String email;
 
-    public Long getId() {
-        return id;
-    }
-
-    public String getLogin() {
-        return login;
-    }
-
-    public String getClave() {
-        return clave;
-    }
-
-    public String getEmail() {
-        return email;
-    }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

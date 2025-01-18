@@ -13,6 +13,7 @@ import java.time.LocalDateTime;
 
 @Table(name = "topics")
 @Entity(name = "Topic")
+@Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
@@ -48,33 +49,6 @@ public class Topic {
     }
 
 
-    public Long getId() {
-        return id;
-    }
-
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public String getMensaje() {
-        return mensaje;
-    }
-
-    public String getNombreCurso() {
-        return nombreCurso;
-    }
-
-    public LocalDateTime getFechacreacion() {
-        return fechacreacion;
-    }
-
-    public Boolean getStatus() {
-        return status;
-    }
-
-    public Usuario getUsuario() {
-        return usuario;
-    }
 
     //Actualisa los datos de un topic
     public void actualisarDatos(DatosActualisarTopic datosActualisarTopic)
